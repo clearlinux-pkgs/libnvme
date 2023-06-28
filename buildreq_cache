@@ -1,0 +1,5 @@
+1.4
+openssl-dev
+pkgconfig(json-c)
+pkgconfig(libkeyutils)
+swig

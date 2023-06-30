@@ -4,10 +4,10 @@
 # Using build pattern: meson
 #
 Name     : libnvme
-Version  : 1.4
-Release  : 1
-URL      : https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.4.tar.gz
-Source0  : https://github.com/linux-nvme/libnvme/archive/refs/tags/v1.4.tar.gz
+Version  : 1.5
+Release  : 2
+URL      : https://github.com/linux-nvme/libnvme/archive/v1.5/libnvme-1.5.tar.gz
+Source0  : https://github.com/linux-nvme/libnvme/archive/v1.5/libnvme-1.5.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : CC0-1.0 LGPL-2.1 MIT
@@ -61,15 +61,15 @@ license components for the libnvme package.
 
 
 %prep
-%setup -q -n libnvme-1.4
-cd %{_builddir}/libnvme-1.4
+%setup -q -n libnvme-1.5
+cd %{_builddir}/libnvme-1.5
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1687977744
+export SOURCE_DATE_EPOCH=1688147863
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -116,6 +116,7 @@ DESTDIR=%{buildroot} ninja -C builddir install
 /usr/include/nvme/linux.h
 /usr/include/nvme/log.h
 /usr/include/nvme/mi.h
+/usr/include/nvme/nbft.h
 /usr/include/nvme/tree.h
 /usr/include/nvme/types.h
 /usr/include/nvme/util.h
@@ -127,9 +128,9 @@ DESTDIR=%{buildroot} ninja -C builddir install
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libnvme-mi.so.1
-/usr/lib64/libnvme-mi.so.1.4.0
+/usr/lib64/libnvme-mi.so.1.5.0
 /usr/lib64/libnvme.so.1
-/usr/lib64/libnvme.so.1.4.0
+/usr/lib64/libnvme.so.1.5.0
 
 %files license
 %defattr(0644,root,root,0755)

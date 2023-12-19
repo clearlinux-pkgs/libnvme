@@ -6,10 +6,10 @@
 # autospec commit: c1050fe
 #
 Name     : libnvme
-Version  : 1.6
-Release  : 4
-URL      : https://github.com/linux-nvme/libnvme/archive/v1.6/libnvme-1.6.tar.gz
-Source0  : https://github.com/linux-nvme/libnvme/archive/v1.6/libnvme-1.6.tar.gz
+Version  : 1.7
+Release  : 5
+URL      : https://github.com/linux-nvme/libnvme/archive/v1.7/libnvme-1.7.tar.gz
+Source0  : https://github.com/linux-nvme/libnvme/archive/v1.7/libnvme-1.7.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : CC0-1.0 LGPL-2.1 MIT
@@ -63,15 +63,15 @@ license components for the libnvme package.
 
 
 %prep
-%setup -q -n libnvme-1.6
-cd %{_builddir}/libnvme-1.6
+%setup -q -n libnvme-1.7
+cd %{_builddir}/libnvme-1.7
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1702019987
+export SOURCE_DATE_EPOCH=1702998254
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -150,9 +150,9 @@ DESTDIR=%{buildroot} ninja -C builddir install
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libnvme-mi.so.1
-/usr/lib64/libnvme-mi.so.1.6.0
+/usr/lib64/libnvme-mi.so.1.7.0
 /usr/lib64/libnvme.so.1
-/usr/lib64/libnvme.so.1.6.0
+/usr/lib64/libnvme.so.1.7.0
 
 %files license
 %defattr(0644,root,root,0755)

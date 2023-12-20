@@ -1,4 +1,4 @@
-1.7
+1.7.1
 openssl-dev
 pkgconfig(json-c)
 pkgconfig(libkeyutils)

@@ -1,5 +1,6 @@
 libnvme-mi.so.1:LIBNVME_MI_1_1
 libnvme-mi.so.1:LIBNVME_MI_1_10
+libnvme-mi.so.1:LIBNVME_MI_1_11
 libnvme-mi.so.1:LIBNVME_MI_1_2
 libnvme-mi.so.1:LIBNVME_MI_1_3
 libnvme-mi.so.1:LIBNVME_MI_1_4
@@ -22,6 +23,7 @@ libnvme-mi.so.1:nvme_mi_admin_set_features@@LIBNVME_MI_1_2
 libnvme-mi.so.1:nvme_mi_admin_xfer@@LIBNVME_MI_1_1
 libnvme-mi.so.1:nvme_mi_close@@LIBNVME_MI_1_1
 libnvme-mi.so.1:nvme_mi_close_ctrl@@LIBNVME_MI_1_1
+libnvme-mi.so.1:nvme_mi_control@@LIBNVME_MI_1_11
 libnvme-mi.so.1:nvme_mi_create_root@@LIBNVME_MI_1_1
 libnvme-mi.so.1:nvme_mi_ctrl_id@@LIBNVME_MI_1_5
 libnvme-mi.so.1:nvme_mi_endpoint_desc@@LIBNVME_MI_1_1
@@ -46,6 +48,7 @@ libnvme-mi.so.1:nvme_mi_scan_mctp@@LIBNVME_MI_1_1
 libnvme-mi.so.1:nvme_mi_set_probe_enabled@@LIBNVME_MI_1_3
 libnvme-mi.so.1:nvme_mi_status_to_string@@LIBNVME_MI_1_2
 libnvme.so.1:LIBNVME_1.10
+libnvme.so.1:LIBNVME_1.11
 libnvme.so.1:LIBNVME_1.9
 libnvme.so.1:LIBNVME_1_0
 libnvme.so.1:LIBNVME_1_1
@@ -75,6 +78,7 @@ libnvme.so.1:nvme_ctrl_get_fd@@LIBNVME_1_0
 libnvme.so.1:nvme_ctrl_get_firmware@@LIBNVME_1_0
 libnvme.so.1:nvme_ctrl_get_host_iface@@LIBNVME_1_0
 libnvme.so.1:nvme_ctrl_get_host_traddr@@LIBNVME_1_0
+libnvme.so.1:nvme_ctrl_get_keyring@@LIBNVME_1.11
 libnvme.so.1:nvme_ctrl_get_model@@LIBNVME_1_0
 libnvme.so.1:nvme_ctrl_get_name@@LIBNVME_1_0
 libnvme.so.1:nvme_ctrl_get_numa_node@@LIBNVME_1_0
@@ -87,6 +91,8 @@ libnvme.so.1:nvme_ctrl_get_state@@LIBNVME_1_0
 libnvme.so.1:nvme_ctrl_get_subsysnqn@@LIBNVME_1_0
 libnvme.so.1:nvme_ctrl_get_subsystem@@LIBNVME_1_0
 libnvme.so.1:nvme_ctrl_get_sysfs_dir@@LIBNVME_1_0
+libnvme.so.1:nvme_ctrl_get_tls_key@@LIBNVME_1.11
+libnvme.so.1:nvme_ctrl_get_tls_key_identity@@LIBNVME_1.11
 libnvme.so.1:nvme_ctrl_get_traddr@@LIBNVME_1_0
 libnvme.so.1:nvme_ctrl_get_transport@@LIBNVME_1_0
 libnvme.so.1:nvme_ctrl_get_trsvcid@@LIBNVME_1_0
@@ -101,7 +107,10 @@ libnvme.so.1:nvme_ctrl_reset@@LIBNVME_1_0
 libnvme.so.1:nvme_ctrl_set_dhchap_host_key@@LIBNVME_1_2
 libnvme.so.1:nvme_ctrl_set_dhchap_key@@LIBNVME_1_0
 libnvme.so.1:nvme_ctrl_set_discovery_ctrl@@LIBNVME_1_0
+libnvme.so.1:nvme_ctrl_set_keyring@@LIBNVME_1.11
 libnvme.so.1:nvme_ctrl_set_persistent@@LIBNVME_1_0
+libnvme.so.1:nvme_ctrl_set_tls_key@@LIBNVME_1.11
+libnvme.so.1:nvme_ctrl_set_tls_key_identity@@LIBNVME_1.11
 libnvme.so.1:nvme_ctrl_set_unique_discovery_ctrl@@LIBNVME_1_3
 libnvme.so.1:nvme_ctrls_filter@@LIBNVME_1_0
 libnvme.so.1:nvme_default_host@@LIBNVME_1_0
@@ -117,6 +126,7 @@ libnvme.so.1:nvme_dump_config@@LIBNVME_1_0
 libnvme.so.1:nvme_dump_tree@@LIBNVME_1_0
 libnvme.so.1:nvme_errno_to_string@@LIBNVME_1_0
 libnvme.so.1:nvme_export_tls_key@@LIBNVME_1.9
+libnvme.so.1:nvme_export_tls_key_versioned@@LIBNVME_1.11
 libnvme.so.1:nvme_first_host@@LIBNVME_1_0
 libnvme.so.1:nvme_first_subsystem@@LIBNVME_1_0
 libnvme.so.1:nvme_format_nvm@@LIBNVME_1_0
@@ -205,6 +215,7 @@ libnvme.so.1:nvme_host_set_hostsymname@@LIBNVME_1_0
 libnvme.so.1:nvme_host_set_pdc_enabled@@LIBNVME_1_3
 libnvme.so.1:nvme_identify@@LIBNVME_1_0
 libnvme.so.1:nvme_import_tls_key@@LIBNVME_1.9
+libnvme.so.1:nvme_import_tls_key_versioned@@LIBNVME_1.11
 libnvme.so.1:nvme_init_copy_range@@LIBNVME_1_0
 libnvme.so.1:nvme_init_copy_range_f1@@LIBNVME_1_1
 libnvme.so.1:nvme_init_copy_range_f2@@LIBNVME_1_7
@@ -374,6 +385,7 @@ libnvme.so.1:nvme_zns_mgmt_send@@LIBNVME_1_0
 libnvme.so.1:nvmf_add_ctrl@@LIBNVME_1_0
 libnvme.so.1:nvmf_adrfam_str@@LIBNVME_1_0
 libnvme.so.1:nvmf_cms_str@@LIBNVME_1_0
+libnvme.so.1:nvmf_connect_ctrl@@LIBNVME_1.11
 libnvme.so.1:nvmf_connect_disc_entry@@LIBNVME_1_0
 libnvme.so.1:nvmf_default_config@@LIBNVME_1_0
 libnvme.so.1:nvmf_eflags_str@@LIBNVME_1_0

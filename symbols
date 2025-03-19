@@ -1,6 +1,7 @@
 libnvme-mi.so.1:LIBNVME_MI_1_1
 libnvme-mi.so.1:LIBNVME_MI_1_10
 libnvme-mi.so.1:LIBNVME_MI_1_11
+libnvme-mi.so.1:LIBNVME_MI_1_12
 libnvme-mi.so.1:LIBNVME_MI_1_2
 libnvme-mi.so.1:LIBNVME_MI_1_3
 libnvme-mi.so.1:LIBNVME_MI_1_4
@@ -40,6 +41,7 @@ libnvme-mi.so.1:nvme_mi_mi_read_mi_data_ctrl_list@@LIBNVME_MI_1_1
 libnvme-mi.so.1:nvme_mi_mi_read_mi_data_port@@LIBNVME_MI_1_1
 libnvme-mi.so.1:nvme_mi_mi_read_mi_data_subsys@@LIBNVME_MI_1_1
 libnvme-mi.so.1:nvme_mi_mi_subsystem_health_status_poll@@LIBNVME_MI_1_1
+libnvme-mi.so.1:nvme_mi_mi_xfer@@LIBNVME_MI_1_12
 libnvme-mi.so.1:nvme_mi_next_ctrl@@LIBNVME_MI_1_1
 libnvme-mi.so.1:nvme_mi_next_endpoint@@LIBNVME_MI_1_1
 libnvme-mi.so.1:nvme_mi_open_mctp@@LIBNVME_MI_1_1
@@ -49,6 +51,7 @@ libnvme-mi.so.1:nvme_mi_set_probe_enabled@@LIBNVME_MI_1_3
 libnvme-mi.so.1:nvme_mi_status_to_string@@LIBNVME_MI_1_2
 libnvme.so.1:LIBNVME_1.10
 libnvme.so.1:LIBNVME_1.11
+libnvme.so.1:LIBNVME_1.12
 libnvme.so.1:LIBNVME_1.9
 libnvme.so.1:LIBNVME_1_0
 libnvme.so.1:LIBNVME_1_1
@@ -233,6 +236,12 @@ libnvme.so.1:nvme_io_mgmt_send@@LIBNVME_1_3
 libnvme.so.1:nvme_io_passthru64@@LIBNVME_1_0
 libnvme.so.1:nvme_io_passthru@@LIBNVME_1_0
 libnvme.so.1:nvme_ipaddrs_eq@@LIBNVME_1_5
+libnvme.so.1:nvme_lm_cdq@@LIBNVME_1.12
+libnvme.so.1:nvme_lm_get_features_ctrl_data_queue@@LIBNVME_1.12
+libnvme.so.1:nvme_lm_migration_recv@@LIBNVME_1.12
+libnvme.so.1:nvme_lm_migration_send@@LIBNVME_1.12
+libnvme.so.1:nvme_lm_set_features_ctrl_data_queue@@LIBNVME_1.12
+libnvme.so.1:nvme_lm_track_send@@LIBNVME_1.12
 libnvme.so.1:nvme_lockdown@@LIBNVME_1_0
 libnvme.so.1:nvme_lookup_ctrl@@LIBNVME_1_0
 libnvme.so.1:nvme_lookup_host@@LIBNVME_1_0
@@ -389,6 +398,7 @@ libnvme.so.1:nvmf_connect_ctrl@@LIBNVME_1.11
 libnvme.so.1:nvmf_connect_disc_entry@@LIBNVME_1_0
 libnvme.so.1:nvmf_default_config@@LIBNVME_1_0
 libnvme.so.1:nvmf_eflags_str@@LIBNVME_1_0
+libnvme.so.1:nvmf_exat_ptr_next@@LIBNVME_1.12
 libnvme.so.1:nvmf_get_discovery_log@@LIBNVME_1_0
 libnvme.so.1:nvmf_get_discovery_wargs@@LIBNVME_1_2
 libnvme.so.1:nvmf_hostid_from_file@@LIBNVME_1_0

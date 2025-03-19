@@ -1,6 +1,7 @@
-1.11.1
+1.12
 openssl-dev
 pkgconfig(json-c)
 pkgconfig(libkeyutils)
+pkgconfig(liburing)
 python3-dev
 swig

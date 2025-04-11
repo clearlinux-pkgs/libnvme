@@ -52,6 +52,7 @@ libnvme-mi.so.1:nvme_mi_status_to_string@@LIBNVME_MI_1_2
 libnvme.so.1:LIBNVME_1.10
 libnvme.so.1:LIBNVME_1.11
 libnvme.so.1:LIBNVME_1.12
+libnvme.so.1:LIBNVME_1.13
 libnvme.so.1:LIBNVME_1.9
 libnvme.so.1:LIBNVME_1_0
 libnvme.so.1:LIBNVME_1_1
@@ -368,8 +369,10 @@ libnvme.so.1:nvme_subsys_filter@@LIBNVME_1_0
 libnvme.so.1:nvme_subsystem_first_ctrl@@LIBNVME_1_0
 libnvme.so.1:nvme_subsystem_first_ns@@LIBNVME_1_0
 libnvme.so.1:nvme_subsystem_get_application@@LIBNVME_1_5
+libnvme.so.1:nvme_subsystem_get_fw_rev@@LIBNVME_1.13
 libnvme.so.1:nvme_subsystem_get_host@@LIBNVME_1_0
 libnvme.so.1:nvme_subsystem_get_iopolicy@@LIBNVME_1_6
+libnvme.so.1:nvme_subsystem_get_model@@LIBNVME_1.13
 libnvme.so.1:nvme_subsystem_get_name@@LIBNVME_1_0
 libnvme.so.1:nvme_subsystem_get_nqn@@LIBNVME_1_0
 libnvme.so.1:nvme_subsystem_get_sysfs_dir@@LIBNVME_1_0

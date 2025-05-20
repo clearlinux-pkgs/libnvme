@@ -2,10 +2,12 @@ libnvme-mi.so.1:LIBNVME_MI_1_1
 libnvme-mi.so.1:LIBNVME_MI_1_10
 libnvme-mi.so.1:LIBNVME_MI_1_11
 libnvme-mi.so.1:LIBNVME_MI_1_12
+libnvme-mi.so.1:LIBNVME_MI_1_14
 libnvme-mi.so.1:LIBNVME_MI_1_2
 libnvme-mi.so.1:LIBNVME_MI_1_3
 libnvme-mi.so.1:LIBNVME_MI_1_4
 libnvme-mi.so.1:LIBNVME_MI_1_5
+libnvme-mi.so.1:LIBNVME_MI_UNRELEASED
 libnvme-mi.so.1:nvme_mi_admin_admin_passthru@@LIBNVME_MI_1_3
 libnvme-mi.so.1:nvme_mi_admin_format_nvm@@LIBNVME_MI_1_2
 libnvme-mi.so.1:nvme_mi_admin_fw_commit@@LIBNVME_MI_1_2
@@ -22,6 +24,12 @@ libnvme-mi.so.1:nvme_mi_admin_security_recv@@LIBNVME_MI_1_1
 libnvme-mi.so.1:nvme_mi_admin_security_send@@LIBNVME_MI_1_1
 libnvme-mi.so.1:nvme_mi_admin_set_features@@LIBNVME_MI_1_2
 libnvme-mi.so.1:nvme_mi_admin_xfer@@LIBNVME_MI_1_1
+libnvme-mi.so.1:nvme_mi_aem_disable@@LIBNVME_MI_1_14
+libnvme-mi.so.1:nvme_mi_aem_enable@@LIBNVME_MI_1_14
+libnvme-mi.so.1:nvme_mi_aem_get_enabled@@LIBNVME_MI_1_14
+libnvme-mi.so.1:nvme_mi_aem_get_fd@@LIBNVME_MI_1_14
+libnvme-mi.so.1:nvme_mi_aem_get_next_event@@LIBNVME_MI_1_14
+libnvme-mi.so.1:nvme_mi_aem_process@@LIBNVME_MI_1_14
 libnvme-mi.so.1:nvme_mi_close@@LIBNVME_MI_1_1
 libnvme-mi.so.1:nvme_mi_close_ctrl@@LIBNVME_MI_1_1
 libnvme-mi.so.1:nvme_mi_control@@LIBNVME_MI_1_11
@@ -47,8 +55,11 @@ libnvme-mi.so.1:nvme_mi_next_endpoint@@LIBNVME_MI_1_1
 libnvme-mi.so.1:nvme_mi_open_mctp@@LIBNVME_MI_1_1
 libnvme-mi.so.1:nvme_mi_scan_ep@@LIBNVME_MI_1_1
 libnvme-mi.so.1:nvme_mi_scan_mctp@@LIBNVME_MI_1_1
+libnvme-mi.so.1:nvme_mi_set_csi@@LIBNVME_MI_1_14
 libnvme-mi.so.1:nvme_mi_set_probe_enabled@@LIBNVME_MI_1_3
 libnvme-mi.so.1:nvme_mi_status_to_string@@LIBNVME_MI_1_2
+libnvme-mi.so.1:nvme_mi_submit_entry@@LIBNVME_MI_1_14
+libnvme-mi.so.1:nvme_mi_submit_exit@@LIBNVME_MI_1_14
 libnvme.so.1:LIBNVME_1.10
 libnvme.so.1:LIBNVME_1.11
 libnvme.so.1:LIBNVME_1.12
@@ -56,6 +67,7 @@ libnvme.so.1:LIBNVME_1.13
 libnvme.so.1:LIBNVME_1.9
 libnvme.so.1:LIBNVME_1_0
 libnvme.so.1:LIBNVME_1_1
+libnvme.so.1:LIBNVME_1_14
 libnvme.so.1:LIBNVME_1_2
 libnvme.so.1:LIBNVME_1_3
 libnvme.so.1:LIBNVME_1_4
@@ -63,6 +75,7 @@ libnvme.so.1:LIBNVME_1_5
 libnvme.so.1:LIBNVME_1_6
 libnvme.so.1:LIBNVME_1_7
 libnvme.so.1:LIBNVME_1_8
+libnvme.so.1:LIBNVME_UNRELEASED
 libnvme.so.1:nvme_admin_passthru64@@LIBNVME_1_0
 libnvme.so.1:nvme_admin_passthru@@LIBNVME_1_0
 libnvme.so.1:nvme_capacity_mgmt@@LIBNVME_1_0
@@ -186,6 +199,7 @@ libnvme.so.1:nvme_get_features_resv_persist@@LIBNVME_1_0
 libnvme.so.1:nvme_get_features_rrl@@LIBNVME_1_0
 libnvme.so.1:nvme_get_features_sanitize@@LIBNVME_1_0
 libnvme.so.1:nvme_get_features_sw_progress@@LIBNVME_1_0
+libnvme.so.1:nvme_get_features_temp_thresh2@@LIBNVME_1_14
 libnvme.so.1:nvme_get_features_temp_thresh@@LIBNVME_1_0
 libnvme.so.1:nvme_get_features_timestamp@@LIBNVME_1_0
 libnvme.so.1:nvme_get_features_volatile_wc@@LIBNVME_1_0
@@ -348,6 +362,7 @@ libnvme.so.1:nvme_set_features_resv_persist@@LIBNVME_1_0
 libnvme.so.1:nvme_set_features_rrl@@LIBNVME_1_0
 libnvme.so.1:nvme_set_features_sanitize@@LIBNVME_1_0
 libnvme.so.1:nvme_set_features_sw_progress@@LIBNVME_1_0
+libnvme.so.1:nvme_set_features_temp_thresh2@@LIBNVME_1_14
 libnvme.so.1:nvme_set_features_temp_thresh@@LIBNVME_1_0
 libnvme.so.1:nvme_set_features_timestamp@@LIBNVME_1_0
 libnvme.so.1:nvme_set_features_volatile_wc@@LIBNVME_1_0
@@ -375,6 +390,7 @@ libnvme.so.1:nvme_subsystem_get_iopolicy@@LIBNVME_1_6
 libnvme.so.1:nvme_subsystem_get_model@@LIBNVME_1.13
 libnvme.so.1:nvme_subsystem_get_name@@LIBNVME_1_0
 libnvme.so.1:nvme_subsystem_get_nqn@@LIBNVME_1_0
+libnvme.so.1:nvme_subsystem_get_serial@@LIBNVME_1_14
 libnvme.so.1:nvme_subsystem_get_sysfs_dir@@LIBNVME_1_0
 libnvme.so.1:nvme_subsystem_get_type@@LIBNVME_1_0
 libnvme.so.1:nvme_subsystem_lookup_namespace@@LIBNVME_1_0
